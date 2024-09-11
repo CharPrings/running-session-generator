@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet href="src/styles.css"></link>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
@@ -18,13 +19,15 @@
 
         <main>
             <form id="session-generator">
-                <input type="text" placeholder="Enter the length of session you would like" autofocus required autocomplete="off" class="instructions"/>
-                <input type="submit" class="submit-button" />
+                <label for="instructions">Enter the number of minutes you would like your session to be <br/>
+                    <small>(including warm-up and cool-down)</small></label> 
+                <div class="submit-form">
+                    <input type="number" min="10" max="90" placeholder="Enter the number of minutes for your session" autofocus required autocomplete="off" class="instructions" id="user-instructions"/>
+                    <input type="submit" class="submit-button" value="Let's go!" />
+                </div>
             </form>
             <div class="session" id="session">
-                The session will go here
-                <br />
-                And here
+                Submit above for a new session!
             </div>
         </main>
         <footer>
