@@ -21,13 +21,20 @@ h1{
     line-height: 1.5;
     color: #82C0CC;
 }
-form {
-    padding: 50px;
+.form-container {
     background-color: #82C0CC;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.06);
+    margin-bottom: 20px;
     border-radius: 10px;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.06);
+    padding: 40px;
+}
+form {    
     display: grid;
-    margin-bottom: 30px;
+}
+.example-minutes {
+    line-height: 1.5;
+    opacity: 0.6;
+    font-size: 12px;    
 }
 .submit-form {
     display: flex;
@@ -38,7 +45,7 @@ form {
     border: 1px solid rgba(39, 33, 66, 0.5);
     width: 80%;
     font-size: 16px;
-    border-radius: 50px;
+    border-radius: 20px;
     line-height: 20px;
 }
 .submit-button {
@@ -47,7 +54,7 @@ form {
     color: #16697A;
     border-color: #16697A;
     width: 150px;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 14px 24px;
 }
 .session {
@@ -56,6 +63,10 @@ form {
     line-height: 2;
     border-left: 3px solid #FFA62B;
     box-shadow: 8px 20px 60px rgba(65, 50, 100, 0.06);
+}
+
+.hidden {
+    display: none;
 }
 
 footer {

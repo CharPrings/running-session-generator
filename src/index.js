@@ -16,6 +16,10 @@ function generateSession(event) {
     let context = "You are a running coach with a speciality in speedwork. Your mission is to generate a summarised speedwork session, including a warm up and cool down. Show the response in basic HTML but do not include the word HTML. The user will provide the length of the session in minutes."
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`
 
+    let sessionElement = document.querySelector("#session")
+    sessionElement.classList.remove("hidden");
+    sessionElement.innerHTML = `${instructionInput.value} minutes, ok! Running it for you... 🏃‍♀️🏃‍♂️`
+
     axios.get(apiUrl).then(displaySession);
 
     

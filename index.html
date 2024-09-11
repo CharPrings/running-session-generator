@@ -18,16 +18,19 @@
         </header>
 
         <main>
-            <form id="session-generator">
-                <label for="instructions">Enter the number of minutes you would like your session to be <br/>
-                    <small>(including warm-up and cool-down)</small></label> 
-                <div class="submit-form">
-                    <input type="number" min="10" max="90" placeholder="Enter the number of minutes for your session" autofocus required autocomplete="off" class="instructions" id="user-instructions"/>
-                    <input type="submit" class="submit-button" value="Let's go!" />
-                </div>
-            </form>
-            <div class="session" id="session">
-                Submit above for a new session!
+            <div class="form-container">
+                <form id="session-generator">
+                    <label for="instructions">Enter the number of minutes you would like your session to be <br/>
+                        <small>(including warm-up and cool-down)</small></label> 
+                    <div class="submit-form">
+                        <input type="number" min="10" max="90" placeholder="Enter the number of minutes for your session" autofocus required autocomplete="off" class="instructions" id="user-instructions"/>
+                        <input type="submit" class="submit-button" value="Let's go!" />
+                    </div>
+                </form>
+                <div class="example-minutes">Enter between 10 - 90 minutes i.e. 30</div>
+            </div>
+            <div class="session hidden" id="session">
+                The generator is running for you... 🏃‍♀️🏃‍♂️
             </div>
         </main>
         <footer>
